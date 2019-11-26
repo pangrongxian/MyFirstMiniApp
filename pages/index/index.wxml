@@ -1,0 +1,65 @@
+<scroll-view class='scroll-view'>
+
+  <swiper style="width:100%;height:400rpx" indicator-active-color="#00F2FE" indicator-dots="true" autoplay="true" interval="3000" circular='true'>
+    <block wx:for="{{bannerList}}" wx:for-item="item" wx:key="bannerid">
+      <swiper-item class='banner-item'>
+        <image class='banner-image' src="{{item.cover}}" style="width:90%;height:100%"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="title-bar">
+    <image class="title-bar-img" src='/images/game_center.png'></image>
+    <view class="title-bar-title">游戏中心</view>
+  </view>
+
+  <view class="page-bd">
+    <view class="weui-grids">
+      <block wx:for="{{gameList}}" wx:for-item="item" wx:key="">
+        <view class="weui-grid">
+          <view class="weui-grid-icon" style="background-image: url({{item.cover_token}})"></view>
+          <view class='title_name'>{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="title-bar-news">
+    <image class="title-bar-img" src='/images/game_choice.png'></image>
+    <view class="title-bar-title">石器中心</view>
+  </view>
+
+  <view class="shiqi-layout">
+    <image class="shiqi-img" src="{{shiqiGameList[0].icon_token}}"></image>
+  </view>
+
+  <view class="title-bar-news">
+    <image class="title-bar-img" src='/images/news.png'></image>
+    <view class="title-bar-title">最新资讯</view>
+  </view>
+
+  <view class="page-bd">
+    <view class="weui-grids-news">
+      <block wx:for="{{articleList}}" wx:for-item="item" wx:key="">
+        <view class="weui-grid-news">
+          <view class="weui-grid-icon-news" style="background-image: url({{item.img_path}})"></view>
+          <view class='title_name'>{{item.title}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="title-bar-news">
+    <image class="title-bar-img" src='/images/game_choice.png'></image>
+    <view class="title-bar-title">精选游戏</view>
+  </view>
+
+
+  <block wx:for="{{selecteGameList}}" wx:for-item="item" wx:key="select">
+    <view class="shiqi-layout">
+      <image class="shiqi-img" src="{{item.cover_token}}"></image>
+    </view>
+  </block>
+
+
+</scroll-view>

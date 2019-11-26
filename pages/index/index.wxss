@@ -1,0 +1,142 @@
+page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+
+.banner-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image {
+  border-radius: 20rpx;
+}
+
+.page-bd {
+  display: flex;
+  flex-direction: column;
+  padding: 12rpx 12rpx;
+  padding-bottom: 16rpx;
+}
+
+.weui-grid {
+  position: relative;
+  float: left;
+  padding: 12rpx 12rpx;
+  padding-top: 20rpx;
+  width: 25%;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.weui-grid-active {
+  background-color: #fff;
+}
+
+.weui-grid-icon {
+  display: flex;
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 auto;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #e6e6e6;
+  border-radius: 30rpx;
+}
+
+.title_name {
+  width: 100%;
+  font-size: 25rpx;
+  margin-top: 18rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  align-content: center;
+  color: #000;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.title-bar {
+  display: flex;
+  width: 100%;
+  padding-left: 48rpx;
+  padding-right: 48rpx;
+  align-items: center;
+  justify-self: center;
+  margin-top: 48rpx;
+  flex-direction: row;
+}
+
+.title-bar-news {
+  display: flex;
+  width: 100%;
+  padding-left: 48rpx;
+  padding-right: 48rpx;
+  align-items: center;
+  justify-self: center;
+  margin-top: 20rpx;
+  flex-direction: row;
+}
+
+.title-bar-img {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.title-bar-title {
+  font-size: 32rpx;
+  margin-left: 10rpx;
+}
+
+
+.weui-grid-news {
+  position: relative;
+  float: left;
+  padding: 12rpx 12rpx;
+  padding-top: 20rpx;
+  width: 50%;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.weui-grid-icon-news {
+  display: flex;
+  width: 92%;
+  height: 180rpx;
+  margin: 0 auto;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #e6e6e6;
+  border-radius: 16rpx;
+}
+
+
+.shiqi-layout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shiqi-img{
+  width: 90%;
+  height: 400rpx;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  border-radius: 18rpx;
+}

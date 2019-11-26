@@ -1,0 +1,4 @@
+<!--pages/category/category.wxml-->
+<view class="test">
+  <view>分类页</view>
+</view>
